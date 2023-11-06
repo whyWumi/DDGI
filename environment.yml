@@ -1,4 +1,4 @@
-name: GGL
+name: DGGI
 channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
   - defaults
@@ -145,4 +145,4 @@ dependencies:
     - virtualenv==20.21.0
     - wcwidth==0.2.6
     - zipp==3.15.0
-prefix: D:\anaconda3\envs\GGL
+prefix: D:\anaconda3\envs\DDGI
