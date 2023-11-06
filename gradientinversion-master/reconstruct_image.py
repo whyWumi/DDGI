@@ -250,7 +250,7 @@ def compute_label_acc(y_true, y_fake):
 
 def get_y_pseudo(args, target_gradient, labels):
 
-    label_pred = dgi_label_recon(target_gradient, args.num_images, args.n_classes).detach().view(-1, 1)
+    label_pred = label_recon(target_gradient, args.num_images, args.n_classes).detach().view(-1, 1)
     print(f'[dgi info] y pred: {label_pred.view(-1,).cpu().numpy()}')
 
     n_correct, acc = compute_label_acc(labels, label_pred)
